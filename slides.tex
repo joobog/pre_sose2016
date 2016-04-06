@@ -47,7 +47,7 @@
 \end{frame}
 
 %\begin{frame}
-	%\frametitle{HDF5 I/O-Features}
+	%\frametitle{HDF5 E/A-Features}
 	%\includegraphics[width=0.5\textwidth]{pictures/Dsets_fig16.JPG}
 %\end{frame}end{frame}
 
@@ -58,7 +58,7 @@
 \end{frame}
 
 %\begin{frame}
-	%\frametitle{HDF5 I/O-Problematik}
+	%\frametitle{HDF5 E/A-Problematik}
 	%\begin{itemize}
 		%\item suboptimale Zugriffsmuster: Simulation vs. Analyse/Verarbeitung
 		%\item erfordert häufiges Konvertieren
@@ -124,12 +124,12 @@
 \section{SIOX Überblick}
 
 \begin{frame}
-	\frametitle{SIOX - Scalable I/O for Extreme Performance}
+	\frametitle{SIOX - Scalable E/A for Extreme Performance}
 	%\frametitle{\includegraphics[width=0.2\textwidth]{pictures/SIOX_Logo_web_0.png}}
 	\begin{itemize}
 		\item Leistungsanalyse Analyse Framework
 		\item Open-Source-Framework veröffentlich unter LGPL
-		\item Unterstützung von diversen I/O-Schichten
+		\item Unterstützung von diversen E/A-Schichten
 			\begin{itemize}
 				\item momentan: MPI, POSIX, HDF5 und NETCDF4
 			\end{itemize}
@@ -150,8 +150,8 @@
 	\begin{itemize}
 		\item Instrumentierung
 			\begin{enumerate}
-				\item I/O Zugriffe werden erfasst
-				\item I/O Zugriffe werden in (SIOX-)Aktivitäten umgewandelt
+				\item E/A Zugriffe werden erfasst
+				\item E/A Zugriffe werden in (SIOX-)Aktivitäten umgewandelt
 				\item Aktivitäten werden in einer Datei gespeichert
 			\end{enumerate}
 		\item PrintPlugin

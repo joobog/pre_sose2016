@@ -1,0 +1,53 @@
+%\documentclass[table,compress,handout]{beamer}\usepackage{pgfpages}\pgfpagesuselayout{4 on 1}[a4paper,landscape,border shrink=5mm]
+%\documentclass[table,compress,handout]{beamer}
+\documentclass[table,compress]{beamer}
+\setbeamertemplate{footline}[frame number]
+%\usetheme{Hamburg}
+
+\usepackage[utf8]{inputenc}
+\usepackage{bera}
+\usepackage{color}
+\usepackage[ngerman]{babel}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{import}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{caption}
+\setbeamertemplate{caption}[numbered]
+
+\makeatletter
+\makeatother
+
+\renewcommand{\emph}[1]{\textbf{#1}}
+\newcommand{\ssp}[1]{	% ssp = Single Sub Point
+	\begin{itemize}\item #1\end{itemize}
+}
+
+\rowcolors{1}{white}{white!95!black}
+
+\title{Parallel-Rechner-Evalution\\Projektvorstellung}
+\author{Eugen Betke und Jakob Lüttgau}
+\institute{Forschungsgruppe\\Deutsches Klimarechnenzentrum}
+\date{07-04-2016}
+
+\include{tikzstuff}
+
+\addto\captionsngerman{
+  \renewcommand{\figurename}{Abbildung}
+}
+
+\begin{document}
+
+\begin{frame}
+      \titlepage
+\end{frame}
+
+%\logo{}
+\begin{frame}
+      \tableofcontents
+\end{frame}
+\include{slides}
+
+\end{document}

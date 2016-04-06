@@ -1,0 +1,24 @@
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows, positioning, er, fit, backgrounds,calc,shapes,decorations.pathreplacing}
+\usepgfmodule{shapes}
+\tikzstyle{every picture}+=[
+	-,
+	>=latex, 
+	thick,
+	%every node/.style={font=\scriptsize},
+	hexmod/.style={-, draw, inner radius=30pt}]
+
+\makeatletter
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text badly centered, inner sep=0pt, align=center]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text centered, align=center, rounded corners]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=2em]
+\tikzstyle{flowchart} = [every node/.style={font=\scriptsize}]
+
+
+\tikzstyle{dtreenode} = [rectangle split,rectangle split parts=2, draw, align=center, every node/.style={font=\scriptsize}, rounded corners]
+\tikzstyle{root} = [fill=black!20, dtreenode]
+\tikzstyle{internal} = [fill=yellow!40, dtreenode]
+\tikzstyle{leaf} = [fill=red!40, dtreenode]
+\makeatother
